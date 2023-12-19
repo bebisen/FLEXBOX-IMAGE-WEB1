@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Image Gallery WEB1</h1>
+  <p>Elias.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://www.burgerdudes.se/wp-content/uploads/2022/02/filippin_dbl_flippin_22feb22_med.jpg" style="width:100%">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/78/89/c5/barrels.jpg" style="width:100%">
+    <img src="https://www.burgerdudes.se/wp-content/uploads/2023/02/jacks_burger_original_cheese_27jan23_med_alt.jpg" style="width:100%">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/8f/80/7d/dubble-burgler.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://images.arla.com/recordid/5EE539DD-6A7E-4575-8A43E063C8389329/pommes-frites.jpg?format=jpg&width=1200&height=630&mode=crop&crop=(0,162,0,-790)" style="width:100%">
+    <img src="https://img.koket.se/standard-mega/pommes-frites-ny.png.jpg" style="width:100%">
+    <img src="https://static.cdn-expressen.se/images/d9/e8/d9e8dhttps://img.koket.se/standard-mega/pauls-pommes-frites.jpg1af3b60431f8543144a17323d9d/4x3/1920@80.jpg" style="width:100%">
+    <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-09-Pommes-Frites%2Fpomme_frite2_01" style="width:100%">
+    <img src="https://www.billyparisi.com/wp-content/uploads/2021/08/fries-1.jpg" style="width:100%">
+    <img src="" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="https://natashaskitchen.com/wp-content/uploads/2022/06/Onion-Rings-Recipe-5.jpg" style="width:100%">
+    <img src="https://www.skinnytaste.com/wp-content/uploads/2023/09/Chicken-Nuggets-10.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://www.farmfrites.com/media/mqnhrfoo/chili-cheese-toppers-landscape_96dpi_1181x835px_x_nr-3364-1-umbraco.png?mode=min&width=676&rnd=133015714072200000" style="width:100%">
+    <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2021/04/Air-Fryer-Wings-8.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
+
